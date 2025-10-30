@@ -36,7 +36,7 @@ module ClientTool
           end
 
         results = ClientTool::Search.run(data, options[:value], key)
-        raise 'Invalid Key' if results == 'invalid_key'
+        raise 'Invalid Key' if results == ::ClientTool::Search::INVALID_KEY
 
         handle_output(results, 'results')
       when 'duplicates'
@@ -60,7 +60,7 @@ module ClientTool
           options[:file] = f
         end
 
-        opts.on('-kSTRING', '--key=STRING', 'Hash key for searching') do |k|
+        opts.on('-kSTRING', '--key=STRING', 'Hash key for searching (By default takes full_name)') do |k|
           options[:key] = k
         end
 
