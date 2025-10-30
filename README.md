@@ -1,3 +1,5 @@
+[![Run specs for the Ruby CLI](https://github.com/strivereep/ruby-cli/actions/workflows/test.yml/badge.svg)](https://github.com/strivereep/ruby-cli/actions/workflows/test.yml)
+
 # Client Tool
 
 A simple Ruby CLI utility to search clients and detect email duplicates in a JSON dataset.
