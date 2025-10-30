@@ -23,6 +23,5 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - uses: actions/checkout@v2
       - name: Run specs
         run: bundle exec rspec
