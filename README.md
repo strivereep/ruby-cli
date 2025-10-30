@@ -10,8 +10,9 @@ A simple Ruby CLI utility to search clients and detect email duplicates in a JSO
 
 - Ruby 3.0+
 
-## Usage
+## Usage Instructions
 
+- Clone or download the repo.
 - Make bin/cli executable: chmod +x bin/cli
 - For search command: bin/cli search --file=data/client.json --value="John"
 - For duplicates command: bin/cli duplicates --file=data/client.json
@@ -32,7 +33,7 @@ A simple Ruby CLI utility to search clients and detect email duplicates in a JSO
 - Only JSON file is considered to be valid file and only supports local files, no url support.
 - Simple substring match, if typo result may be different.
 - For large json files, it may consume significant memory.
-- No multi search field supported only one field i.e. --key=full_name or --key=email
+- No multi search field support i.e. --key="full_name AND email"
 - Only shows the output in the terminal.
 
 ## Future Improvements
